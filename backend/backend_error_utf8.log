@@ -1,0 +1,66 @@
+﻿
+> auction_system_server@2.0.2 start
+> node index.js
+
+node.exe : 
+node:events:496
+At C:\Program Files\nod
+ejs\npm.ps1:29 char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (node:events:4   
+ 96:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+      throw er; // 
+Unhandled 'error' event
+      ^
+
+Error: listen 
+EADDRINUSE: address 
+already in use :::3000
+    at Server.setupList
+enHandle [as _listen2] 
+(node:net:1940:16)
+    at listenInCluster 
+(node:net:1997:12)
+    at Server.listen 
+(node:net:2102:7)
+    at file:///C:/Users
+/dipti/OneDrive/Desktop
+/Auction%20World%201/ba
+ckend/index.js:40:8
+    at ModuleJob.run (n
+ode:internal/modules/es
+m/module_job:329:25)
+    at async onImport.t
+racePromise.__proto__ (
+node:internal/modules/e
+sm/loader:644:26)
+    at async asyncRunEn
+tryPointWithESMLoader (
+node:internal/modules/r
+un_main:117:5)
+Emitted 'error' event 
+on Server instance at:
+    at emitErrorNT 
+(node:net:1976:8)
+    at process.processT
+icksAndRejections (node
+:internal/process/task_
+queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.17.0

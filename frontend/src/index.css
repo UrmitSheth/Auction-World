@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+/* ============================================
+   THEME SYSTEM — CSS Custom Properties
+   ============================================ */
+
+:root,
+[data-theme="light"] {
+  --color-bg: #f0fdf4;
+  --color-bg-secondary: #ffffff;
+  --color-bg-tertiary: #ecfdf5;
+  --color-card: #ffffff;
+  --color-card-hover: #f0fdf4;
+  --color-border: #d1fae5;
+  --color-border-light: #a7f3d0;
+  --color-text: #064e3b;
+  --color-text-secondary: #047857;
+  --color-text-muted: #6ee7b7;
+  --color-text-heading: #022c22;
+  --color-accent: #059669;
+  --color-accent-hover: #047857;
+  --color-accent-light: #d1fae5;
+  --color-danger: #ef4444;
+  --color-danger-bg: #fef2f2;
+  --color-success-bg: #ecfdf5;
+  --color-shadow: rgba(5, 150, 105, 0.08);
+  --color-overlay: rgba(6, 78, 59, 0.4);
+  --color-gradient-start: #059669;
+  --color-gradient-end: #0d9488;
+  --color-input-bg: #ffffff;
+  --color-input-border: #a7f3d0;
+  --color-badge-bg: #d1fae5;
+  --color-badge-text: #047857;
+}
+
+[data-theme="dark"] {
+  --color-bg: #0f172a;
+  --color-bg-secondary: #1e293b;
+  --color-bg-tertiary: #1a2332;
+  --color-card: #1e293b;
+  --color-card-hover: #273549;
+  --color-border: #334155;
+  --color-border-light: #475569;
+  --color-text: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-text-heading: #f1f5f9;
+  --color-accent: #34d399;
+  --color-accent-hover: #6ee7b7;
+  --color-accent-light: #064e3b;
+  --color-danger: #f87171;
+  --color-danger-bg: #3b1111;
+  --color-success-bg: #052e1b;
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-gradient-start: #059669;
+  --color-gradient-end: #0891b2;
+  --color-input-bg: #1e293b;
+  --color-input-border: #475569;
+  --color-badge-bg: #064e3b;
+  --color-badge-text: #6ee7b7;
+}
+
+[data-theme="emerald"] {
+  --color-bg: #ecfdf5;
+  --color-bg-secondary: #ffffff;
+  --color-bg-tertiary: #d1fae5;
+  --color-card: #ffffff;
+  --color-card-hover: #d1fae5;
+  --color-border: #a7f3d0;
+  --color-border-light: #6ee7b7;
+  --color-text: #064e3b;
+  --color-text-secondary: #047857;
+  --color-text-muted: #34d399;
+  --color-text-heading: #022c22;
+  --color-accent: #047857;
+  --color-accent-hover: #065f46;
+  --color-accent-light: #a7f3d0;
+  --color-danger: #dc2626;
+  --color-danger-bg: #fef2f2;
+  --color-success-bg: #d1fae5;
+  --color-shadow: rgba(4, 120, 87, 0.12);
+  --color-overlay: rgba(6, 78, 59, 0.5);
+  --color-gradient-start: #047857;
+  --color-gradient-end: #059669;
+  --color-input-bg: #f0fdf4;
+  --color-input-border: #6ee7b7;
+  --color-badge-bg: #a7f3d0;
+  --color-badge-text: #065f46;
+}
+
+[data-theme="ocean"] {
+  --color-bg: #0c1222;
+  --color-bg-secondary: #1a2744;
+  --color-bg-tertiary: #152238;
+  --color-card: #1a2744;
+  --color-card-hover: #243555;
+  --color-border: #2a3f66;
+  --color-border-light: #3b5998;
+  --color-text: #bfdbfe;
+  --color-text-secondary: #93c5fd;
+  --color-text-muted: #60a5fa;
+  --color-text-heading: #e0efff;
+  --color-accent: #38bdf8;
+  --color-accent-hover: #7dd3fc;
+  --color-accent-light: #0c4a6e;
+  --color-danger: #fb7185;
+  --color-danger-bg: #4c1d2a;
+  --color-success-bg: #0c3547;
+  --color-shadow: rgba(56, 189, 248, 0.1);
+  --color-overlay: rgba(12, 18, 34, 0.7);
+  --color-gradient-start: #0284c7;
+  --color-gradient-end: #7c3aed;
+  --color-input-bg: #152238;
+  --color-input-border: #3b5998;
+  --color-badge-bg: #0c4a6e;
+  --color-badge-text: #7dd3fc;
+}
+
+[data-theme="sunset"] {
+  --color-bg: #1a1020;
+  --color-bg-secondary: #2a1a30;
+  --color-bg-tertiary: #221528;
+  --color-card: #2a1a30;
+  --color-card-hover: #3a2540;
+  --color-border: #4a2d55;
+  --color-border-light: #6b3f78;
+  --color-text: #fcd6e0;
+  --color-text-secondary: #f9a8d4;
+  --color-text-muted: #c084fc;
+  --color-text-heading: #fef2f8;
+  --color-accent: #f97316;
+  --color-accent-hover: #fb923c;
+  --color-accent-light: #7c2d12;
+  --color-danger: #f87171;
+  --color-danger-bg: #4c1d1d;
+  --color-success-bg: #3b1a07;
+  --color-shadow: rgba(249, 115, 22, 0.12);
+  --color-overlay: rgba(26, 16, 32, 0.7);
+  --color-gradient-start: #f97316;
+  --color-gradient-end: #ec4899;
+  --color-input-bg: #221528;
+  --color-input-border: #6b3f78;
+  --color-badge-bg: #7c2d12;
+  --color-badge-text: #fdba74;
+}
+
+/* ============================================
+   GLOBAL THEME APPLICATION
+   ============================================ */
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth transitions for themed elements */
+.theme-card {
+  background-color: var(--color-card);
+  border-color: var(--color-border);
+  color: var(--color-text);
+  transition: all 0.3s ease;
+}
+
+.theme-card:hover {
+  background-color: var(--color-card-hover);
+}
+
+.theme-bg {
+  background-color: var(--color-bg);
+}
+
+.theme-bg-secondary {
+  background-color: var(--color-bg-secondary);
+}
+
+.theme-bg-tertiary {
+  background-color: var(--color-bg-tertiary);
+}
+
+.theme-text {
+  color: var(--color-text);
+}
+
+.theme-text-heading {
+  color: var(--color-text-heading);
+}
+
+.theme-text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.theme-text-muted {
+  color: var(--color-text-muted);
+}
+
+.theme-border {
+  border-color: var(--color-border);
+}
+
+.theme-accent {
+  color: var(--color-accent);
+}
+
+.theme-accent-bg {
+  background-color: var(--color-accent);
+}
+
+.theme-accent-bg:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.theme-input {
+  background-color: var(--color-input-bg);
+  border-color: var(--color-input-border);
+  color: var(--color-text);
+}
+
+.theme-input:focus {
+  border-color: var(--color-accent);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-accent-light);
+}
+
+.theme-badge {
+  background-color: var(--color-badge-bg);
+  color: var(--color-badge-text);
+}
+
+.theme-gradient {
+  background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
+}
+
+.theme-shadow {
+  box-shadow: 0 4px 24px var(--color-shadow);
+}
+
+/* ============================================
+   SCROLLBAR THEMING
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-light);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}

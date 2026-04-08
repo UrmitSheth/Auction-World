@@ -1,0 +1,174 @@
+﻿
+> auction_system_server@2.0.2 start
+> node index.js
+
+Server is running on port 3000
+a user connected OpvFFvDfaskLfZK_AAAB
+Connected to MongoDB
+a user connected V7z760misEdSi6yvAAAE
+a user connected J5LfIqqJjEyKju7EAAAF
+Connected to MongoDB
+a user connected 5s_ynOw5mRVCqWJdAAAI
+node.exe : Error 
+marking messages as 
+seen:  CastError: Cast 
+to ObjectId failed for 
+value "temp_69b70a4f08e
+eaf3aad2e80f0" (type 
+string) at path 
+"conversationId" for 
+model "Message"
+At C:\Program Files\nod
+ejs\npm.ps1:29 char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo     
+         : 
+NotSpecified: (Err    
+or marking m...model " 
+   Message":String) 
+[], R    emoteException
+    + 
+FullyQualifiedErrorI   
+ d : NativeCommandError
+ 
+    at 
+SchemaObjectId.cast (C:
+\Users\dipti\OneDrive\D
+esktop\Auction World 1\
+backend\node_modules\mo
+ngoose\lib\schema\objec
+tId.js:251:11)
+    at SchemaType.apply
+Setters (C:\Users\dipti
+\OneDrive\Desktop\Aucti
+on World 1\backend\node
+_modules\mongoose\lib\s
+chemaType.js:1255:12)
+    at SchemaType.castF
+orQuery (C:\Users\dipti
+\OneDrive\Desktop\Aucti
+on World 1\backend\node
+_modules\mongoose\lib\s
+chemaType.js:1673:17)
+    at cast (C:\Users\d
+ipti\OneDrive\Desktop\A
+uction World 1\backend\
+node_modules\mongoose\l
+ib\cast.js:390:32)
+    at Query.cast (C:\U
+sers\dipti\OneDrive\Des
+ktop\Auction World 1\ba
+ckend\node_modules\mong
+oose\lib\query.js:5055:
+12)
+    at 
+Query._castConditions (
+C:\Users\dipti\OneDrive
+\Desktop\Auction World 
+1\backend\node_modules\
+mongoose\lib\query.js:2
+351:10)
+    at model.Query._upd
+ateThunk (C:\Users\dipt
+i\OneDrive\Desktop\Auct
+ion World 1\backend\nod
+e_modules\mongoose\lib\
+query.js:4020:8)
+    at model.Query._upd
+ateMany (C:\Users\dipti
+\OneDrive\Desktop\Aucti
+on World 1\backend\node
+_modules\mongoose\lib\q
+uery.js:4114:23)
+    at 
+model.Query.exec (C:\Us
+ers\dipti\OneDrive\Desk
+top\Auction World 1\bac
+kend\node_modules\mongo
+ose\lib\query.js:4604:8
+0)
+    at process.processT
+icksAndRejections (node
+:internal/process/task_
+queues:105:5) {
+  stringValue: '"temp_6
+9b70a4f08eeaf3aad2e80f0
+"',
+  messageFormat: 
+undefined,
+  kind: 'ObjectId',
+  value: 'temp_69b70a4f
+08eeaf3aad2e80f0',
+  path: 
+'conversationId',
+  reason: BSONError: 
+input must be a 24 
+character hex string, 
+12 byte Uint8Array, or 
+an integer
+      at new ObjectId (
+C:\Users\dipti\OneDrive
+\Desktop\Auction World 
+1\backend\node_modules\
+bson\lib\bson.cjs:2523:
+23)
+      at castObjectId (
+C:\Users\dipti\OneDrive
+\Desktop\Auction World 
+1\backend\node_modules\
+mongoose\lib\cast\objec
+tid.js:25:12)
+      at 
+SchemaObjectId.cast (C:
+\Users\dipti\OneDrive\D
+esktop\Auction World 1\
+backend\node_modules\mo
+ngoose\lib\schema\objec
+tId.js:249:12)
+      at SchemaType.app
+lySetters (C:\Users\dip
+ti\OneDrive\Desktop\Auc
+tion World 1\backend\no
+de_modules\mongoose\lib
+\schemaType.js:1255:12)
+      at SchemaType.cas
+tForQuery (C:\Users\dip
+ti\OneDrive\Desktop\Auc
+tion World 1\backend\no
+de_modules\mongoose\lib
+\schemaType.js:1673:17)
+      at cast (C:\Users
+\dipti\OneDrive\Desktop
+\Auction World 1\backen
+d\node_modules\mongoose
+\lib\cast.js:390:32)
+      at Query.cast (C:
+\Users\dipti\OneDrive\D
+esktop\Auction World 1\
+backend\node_modules\mo
+ngoose\lib\query.js:505
+5:12)
+      at 
+Query._castConditions (
+C:\Users\dipti\OneDrive
+\Desktop\Auction World 
+1\backend\node_modules\
+mongoose\lib\query.js:2
+351:10)
+      at model.Query._u
+pdateThunk (C:\Users\di
+pti\OneDrive\Desktop\Au
+ction World 1\backend\n
+ode_modules\mongoose\li
+b\query.js:4020:8)
+      at model.Query._u
+pdateMany (C:\Users\dip
+ti\OneDrive\Desktop\Auc
+tion World 1\backend\no
+de_modules\mongoose\lib
+\query.js:4114:23),
+  valueType: 'string'
+}
